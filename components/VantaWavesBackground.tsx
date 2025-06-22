@@ -4,8 +4,25 @@ import { useEffect, useRef, useState } from 'react';
 
 declare global {
   interface Window {
-    VANTA: any;
-    THREE: any;
+    VANTA: {
+      WAVES: (options: {
+        el: HTMLElement;
+        mouseControls: boolean;
+        touchControls: boolean;
+        gyroControls: boolean;
+        minHeight: number;
+        minWidth: number;
+        scale: number;
+        scaleMobile: number;
+        color: number;
+        shininess: number;
+        waveHeight: number;
+        waveSpeed: number;
+        zoom: number;
+        backgroundAlpha: number;
+      }) => { destroy: () => void };
+    };
+    THREE: object;
   }
 }
 
@@ -15,7 +32,7 @@ interface VantaWavesBackgroundProps {
 
 export function VantaWavesBackground({ className = "" }: VantaWavesBackgroundProps) {
   const vantaRef = useRef<HTMLDivElement>(null);
-  const vantaEffect = useRef<any>(null);
+  const vantaEffect = useRef<{ destroy: () => void; resizeHandler?: () => void } | null>(null);
   const [mounted, setMounted] = useState(false);
   const [scriptsLoaded, setScriptsLoaded] = useState(false);
 

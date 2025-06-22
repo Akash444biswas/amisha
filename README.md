@@ -1,26 +1,33 @@
-# 🚀 Saurabh's Portfolio Website
+# 🚀 Kumari Manisha - Backend Developer Portfolio
 
-A modern, high-end portfolio website built with cutting-edge technologies to showcase skills, projects, and professional experience. This portfolio features a bold, elegant design with beautiful animations and a premium feel.
+A stunning, professional portfolio website showcasing backend development expertise. Built with Next.js 15, TypeScript, and Tailwind CSS, featuring animated wave backgrounds, smooth interactions, and modern design perfect for backend developers.
 
 ## ✨ Features
 
-- **Modern Design**: Clean, professional layout with startup-quality aesthetics
-- **Dark Mode Support**: Seamless theme switching with system preference detection
-- **Smooth Animations**: Powered by Framer Motion for engaging user interactions
-- **Responsive Design**: Optimized for all devices and screen sizes
-- **Performance Optimized**: Built with Next.js 15 and optimized for speed
-- **Accessible**: Following WCAG guidelines for inclusive design
-- **SEO Optimized**: Meta tags, structured data, and performance optimization
+- **Animated Wave Background**: Beautiful Vanta.js wave animations across all pages
+- **Professional Design**: Clean, modern layout optimized for backend developers
+- **Typewriter Effect**: Auto-typing text showcasing key backend skills
+- **Responsive Design**: Fully responsive design that works perfectly on all devices
+- **Interactive Elements**: Smooth hover effects, animations, and micro-interactions
+- **Performance Optimized**: Fast loading with Next.js optimizations and hardware acceleration
+- **SEO Friendly**: Proper meta tags and structured data for better visibility
+- **Accessible**: Built with accessibility best practices and reduced motion support
+
+## 🚀 Quick Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Mniasha123/Manisha_Portfolio)
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 15 with App Router
-- **Styling**: Tailwind CSS + ShadCN/UI components
-- **Animations**: Framer Motion
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI + ShadCN/UI
+- **Animations**: Framer Motion + Vanta.js + Lottie
 - **Icons**: Lucide React
-- **Typography**: Geist Sans & Geist Mono fonts
-- **Theme**: next-themes for dark/light mode
-- **Language**: TypeScript for type safety
+- **Background**: Vanta.js Waves with Three.js
+- **Form Handling**: React Hook Form + Zod
+- **Deployment**: Vercel
 
 ## 📁 Project Structure
 
@@ -50,17 +57,20 @@ my-portfolio/
 ## 🚀 Getting Started
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd my-portfolio
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Run the development server**
+
    ```bash
    npm run dev
    ```
@@ -71,7 +81,9 @@ my-portfolio/
 ## 🎨 Customization
 
 ### Personal Information
+
 Update the following files with your information:
+
 - `app/layout.tsx` - Meta tags and SEO information
 - `components/sections/hero.tsx` - Name, title, and introduction
 - `components/sections/about.tsx` - About me content and skills
@@ -79,11 +91,13 @@ Update the following files with your information:
 - `components/sections/contact.tsx` - Contact information
 
 ### Styling
+
 - `app/globals.css` - Global styles and CSS variables
 - `tailwind.config.ts` - Tailwind configuration and custom animations
 - `components/ui/` - Customize ShadCN/UI components
 
 ### Content
+
 - Replace placeholder images in the projects section
 - Update social media links throughout the site
 - Modify the testimonials with real client feedback
@@ -110,11 +124,13 @@ Update the following files with your information:
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
+
 1. Push your code to GitHub
 2. Connect your repository to Vercel
 3. Deploy with zero configuration
 
 ### Other Platforms
+
 - **Netlify**: Connect GitHub repo and deploy
 - **Railway**: Deploy with `railway up`
 - **Digital Ocean**: Use App Platform

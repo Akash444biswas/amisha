@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Home, ArrowLeft } from "lucide-react";
@@ -10,7 +12,7 @@ export default function NotFound() {
           <h1 className="text-9xl font-bold text-blue-500/20">404</h1>
           <h2 className="text-3xl font-bold text-white">Page Not Found</h2>
           <p className="text-white/70">
-            Sorry, the page you are looking for doesn't exist or has been moved.
+            Sorry, the page you are looking for doesn&apos;t exist or has been moved.
           </p>
         </div>
         

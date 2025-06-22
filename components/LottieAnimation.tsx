@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import Lottie from 'lottie-react';
 
 interface LottieAnimationProps {
@@ -18,12 +18,11 @@ export default function LottieAnimation({
   autoplay = true,
   fallbackIcon = "🛒"
 }: LottieAnimationProps) {
-  const [animationData, setAnimationData] = useState(null);
+  const [animationData, setAnimationData] = useState<object | null>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
 
   // Predefined shopping cart animation from LottieFiles
-  const shoppingCartAnimation = {
+  const shoppingCartAnimation = useMemo(() => ({
     "v": "5.7.4",
     "fr": 30,
     "ip": 0,
@@ -89,7 +88,7 @@ export default function LottieAnimation({
         "bm": 0
       }
     ]
-  };
+  }), []);
 
   useEffect(() => {
     const loadAnimation = async () => {
@@ -139,7 +138,7 @@ export default function LottieAnimation({
     };
 
     loadAnimation();
-  }, [src]);
+  }, [src, shoppingCartAnimation]);
 
   if (loading) {
     return (

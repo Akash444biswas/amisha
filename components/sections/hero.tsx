@@ -7,13 +7,24 @@ import { useEffect, useRef } from "react";
 
 declare global {
   interface Window {
-    Typed: any;
+    Typed: {
+      new (element: HTMLElement, options: {
+        strings: string[];
+        typeSpeed: number;
+        backSpeed: number;
+        backDelay: number;
+        startDelay: number;
+        loop: boolean;
+        showCursor: boolean;
+        cursorChar: string;
+      }): { destroy: () => void };
+    };
   }
 }
 
 export default function HeroSection() {
   const typedRef = useRef<HTMLSpanElement>(null);
-  const typedInstance = useRef<any>(null);
+  const typedInstance = useRef<{ destroy: () => void } | null>(null);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -67,7 +78,7 @@ export default function HeroSection() {
               className="space-y-2"
             >
               <h2 className="text-xl md:text-2xl font-medium text-gray-600 dark:text-gray-400">
-                Hello, I'm
+                Hello, I&apos;m
               </h2>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent pb-2 drop-shadow-2xl">
                 Kumari Manisha

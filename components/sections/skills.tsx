@@ -159,7 +159,7 @@ export default function SkillsSection() {
           <div className="bg-card rounded-lg p-8 max-w-2xl mx-auto border">
             <h4 className="text-xl font-semibold mb-4">Always Learning</h4>
             <p className="text-muted-foreground leading-relaxed">
-              I'm constantly exploring new technologies and improving my skills.
+              I&apos;m constantly exploring new technologies and improving my skills.
               Currently diving deeper into microservices architecture, cloud technologies,
               and advanced Spring Boot patterns to stay at the forefront of backend development.
             </p>
