@@ -45,7 +45,7 @@ export default function ContactSection() {
     {
       icon: MapPin,
       title: "Location",
-      value: "India",
+      value: "Bengaluru, Karnataka",
       href: "#"
     }
   ];
