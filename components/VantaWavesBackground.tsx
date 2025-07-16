@@ -91,9 +91,9 @@ export function VantaWavesBackground({ className = "" }: VantaWavesBackgroundPro
     if (!scriptsLoaded || !vantaRef.current || vantaEffect.current) return;
 
     // Patch: Ensure THREE.DoubleSide is defined
-    if (window.THREE && typeof window.THREE.DoubleSide === 'undefined') {
-      
-      (window.THREE as Record<string, unknown>).DoubleSide = 2;
+    if (window.THREE && typeof (window.THREE as Record<string, unknown>)["DoubleSide"] === 'undefined') {
+
+      (window.THREE as Record<string, unknown>)["DoubleSide"] = 2;
     }
 
     try {
