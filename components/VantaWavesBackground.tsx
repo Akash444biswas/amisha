@@ -92,8 +92,8 @@ export function VantaWavesBackground({ className = "" }: VantaWavesBackgroundPro
 
     // Patch: Ensure THREE.DoubleSide is defined
     if (window.THREE && typeof window.THREE.DoubleSide === 'undefined') {
-      // @ts-expect-error: Vanta.js sometimes requires DoubleSide, which may not be defined on THREE in some environments
-      (window.THREE as any).DoubleSide = 2;
+      
+      (window.THREE as Record<string, unknown>).DoubleSide = 2;
     }
 
     try {
