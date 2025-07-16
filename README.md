@@ -1,4 +1,4 @@
-# 🚀 Kumari Manisha - Backend Developer Portfolio
+# 🚀 Amisha Gupta - Backend Developer Portfolio
 
 A stunning, professional portfolio website showcasing backend development expertise. Built with Next.js 15, TypeScript, and Tailwind CSS, featuring animated wave backgrounds, smooth interactions, and modern design perfect for backend developers.
 
@@ -15,7 +15,7 @@ A stunning, professional portfolio website showcasing backend development expert
 
 ## 🚀 Quick Deploy to Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Mniasha123/Manisha_Portfolio)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/amisha6502/Amisha_Portfolio)
 
 ## 🛠️ Tech Stack
 

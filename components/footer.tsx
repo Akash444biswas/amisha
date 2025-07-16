@@ -18,12 +18,12 @@ export default function Footer() {
         >
           {/* Logo/Name */}
           <div className="text-xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">
-            Kumari Manisha
+            Amisha Gupta
           </div>
 
           {/* Copyright */}
           <div className="flex items-center space-x-2 text-sm text-white/70">
-            <span>© {currentYear} Kumari Manisha. Made with</span>
+            <span>© {currentYear} Amisha Gupta. Made with</span>
             <Heart className="h-4 w-4 text-red-500 fill-current animate-pulse" />
             <span>using Next.js & Tailwind CSS</span>
           </div>

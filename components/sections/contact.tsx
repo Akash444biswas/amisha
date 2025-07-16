@@ -33,19 +33,19 @@ export default function ContactSection() {
     {
       icon: Mail,
       title: "Email",
-      value: "manishak6266@gmail.com",
-      href: "mailto:manishak6266@gmail.com"
+      value: "amishagupta0605@gmail.com",
+      href: "mailto:amishagupta0605@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+91 6207351907",
-      href: "tel:+916207351907"
+      value: "+91 83493 70400",
+      href: "tel:+918349370400"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "Bengaluru, Karnataka",
+      value: "Bilaspur, Chhattisgarh",
       href: "#"
     }
   ];
@@ -120,7 +120,7 @@ export default function ContactSection() {
               <h4 className="font-medium mb-4">Follow Me</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com/Mniasha123"
+                  href="https://github.com/amisha6502"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-muted hover:bg-accent transition-colors text-sm font-medium"
@@ -128,7 +128,7 @@ export default function ContactSection() {
                   GitHub
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/kumari-manisha-28a241222/"
+                  href="https://www.linkedin.com/in/amisha-gupta-0614b0226"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-muted hover:bg-accent transition-colors text-sm font-medium"

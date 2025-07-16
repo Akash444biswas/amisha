@@ -8,7 +8,7 @@ import { useEffect, useRef } from "react";
 declare global {
   interface Window {
     Typed: {
-      new (element: HTMLElement, options: {
+      new(element: HTMLElement, options: {
         strings: string[];
         typeSpeed: number;
         backSpeed: number;
@@ -81,7 +81,7 @@ export default function HeroSection() {
                 Hello, I&apos;m
               </h2>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent pb-2 drop-shadow-2xl">
-                Kumari Manisha
+                Amisha Gupta
               </h1>
               <div className="text-2xl md:text-3xl font-semibold text-white/90 drop-shadow-lg min-h-[3rem] text-left">
                 <span ref={typedRef}></span>
@@ -103,8 +103,8 @@ export default function HeroSection() {
                   <ArrowRight className="h-5 w-5" />
                 </motion.button>
                 <motion.a
-                  href="/manisha-resume.pdf"
-                  download="Kumari_Manisha_Resume.pdf"
+                  href="/resume amisha . pdf.pdf"
+                  download="Amisha_Gupta_Resume.pdf"
                   whileHover={{
                     scale: 1.05,
                     boxShadow: "0 0 25px rgba(168, 85, 247, 0.6)"
@@ -136,7 +136,7 @@ export default function HeroSection() {
                 className="pt-8 flex gap-4"
               >
                 <motion.a
-                  href="https://github.com/Mniasha123"
+                  href="https://github.com/amisha6502"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1, y: -2 }}
@@ -145,7 +145,7 @@ export default function HeroSection() {
                   GitHub
                 </motion.a>
                 <motion.a
-                  href="https://www.linkedin.com/in/kumari-manisha-28a241222/"
+                  href="https://www.linkedin.com/in/amisha-gupta-0614b0226/"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1, y: -2 }}

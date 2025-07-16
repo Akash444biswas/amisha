@@ -3,59 +3,35 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Award, BookOpen, Users, FileText } from "lucide-react";
+import { Award, BookOpen, Users } from "lucide-react";
 
 export default function CertificationsSection() {
   const certifications = [
     {
       icon: BookOpen,
-      title: "Java Full Stack Development Course",
-      organization: "JSpiders",
-      description: "Comprehensive training in Java backend development, Spring Boot, and full-stack technologies.",
-      type: "Course",
+      title: "Training in Full Stack Web Development",
+      organization: "E&ICT Academy, IIT Kanpur",
+      description: "Comprehensive training program in full stack web development covering modern technologies and best practices.",
+      type: "Training",
       status: "Completed",
-      skills: ["Java", "Spring Boot", "Full Stack Development"],
+      year: "2022",
+      skills: ["Full Stack Development", "Web Technologies", "Modern Frameworks"],
       hoverColor: "hover:border-blue-500 hover:shadow-blue-500/20 hover:bg-blue-500/10",
       iconBg: "group-hover:bg-blue-500/20",
       iconColor: "group-hover:text-blue-400"
     },
     {
       icon: Users,
-      title: "Web Development Training & Internship",
-      organization: "Internshala",
-      description: "2-month intensive training and internship program focusing on web development technologies and practical project implementation.",
-      type: "Training & Internship",
+      title: "Training in Android App Development",
+      organization: "E&ICT Academy, IIT Kanpur",
+      description: "Specialized training program in Android application development focusing on mobile app creation and deployment.",
+      type: "Training",
       status: "Completed",
-      duration: "2 months",
-      skills: ["Web Development", "Project Implementation"],
+      year: "2023",
+      skills: ["Android Development", "Mobile Apps", "Java/Kotlin"],
       hoverColor: "hover:border-green-500 hover:shadow-green-500/20 hover:bg-green-500/10",
       iconBg: "group-hover:bg-green-500/20",
       iconColor: "group-hover:text-green-400"
-    },
-    {
-      icon: Users,
-      title: "Web Development Internship",
-      organization: "CodeSoft",
-      description: "1-month internship program gaining hands-on experience in web development and software engineering practices.",
-      type: "Internship",
-      status: "Completed",
-      duration: "1 month",
-      skills: ["Web Development", "Software Engineering"],
-      hoverColor: "hover:border-purple-500 hover:shadow-purple-500/20 hover:bg-purple-500/10",
-      iconBg: "group-hover:bg-purple-500/20",
-      iconColor: "group-hover:text-purple-400"
-    },
-    {
-      icon: FileText,
-      title: "Face Spoofing Detection Using Deep Learning",
-      organization: "WCONF 2024 - Kalinga University",
-      description: "Presented research paper on face spoofing detection using deep learning techniques at the international conference.",
-      type: "Paper Presentation",
-      status: "Presented",
-      skills: ["Deep Learning", "Research", "Computer Vision"],
-      hoverColor: "hover:border-pink-500 hover:shadow-pink-500/20 hover:bg-pink-500/10",
-      iconBg: "group-hover:bg-pink-500/20",
-      iconColor: "group-hover:text-pink-400"
     }
   ];
 
@@ -105,9 +81,9 @@ export default function CertificationsSection() {
                       <Badge variant="outline" className="text-xs">
                         {cert.type}
                       </Badge>
-                      {cert.duration && (
+                      {cert.year && (
                         <Badge variant="secondary" className="text-xs">
-                          {cert.duration}
+                          {cert.year}
                         </Badge>
                       )}
                     </div>

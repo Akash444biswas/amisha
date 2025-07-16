@@ -23,6 +23,7 @@ export default function Navbar() {
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
+    { name: "Education", href: "#education" },
     { name: "Certifications", href: "#certifications" },
     { name: "Contact", href: "#contact" },
   ];
@@ -40,7 +41,7 @@ export default function Navbar() {
       <nav className="fixed w-full z-50 bg-background/80 backdrop-blur-md py-3 shadow-md">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">
-            Kumari Manisha
+            Amisha Gupta
           </div>
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
@@ -70,7 +71,7 @@ export default function Navbar() {
           transition={{ delay: 0.2 }}
           className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg"
         >
-          Kumari Manisha
+          Amisha Gupta
         </motion.div>
 
         {/* Desktop Menu */}

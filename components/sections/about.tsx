@@ -46,7 +46,7 @@ export default function AboutSection() {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Passionate about creating digital experiences that make a difference
+            Looking to work in an organization that encourages continuous learning and growth
           </p>
         </motion.div>
 
@@ -62,14 +62,14 @@ export default function AboutSection() {
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold">My Journey</h3>
               <p className="text-muted-foreground leading-relaxed">
+                Looking to work in an organization that encourages continuous learning, personal growth, and professional development.
+                I am eager to contribute to meaningful projects, collaborate with a motivated team, and take on challenges that
+                allow me to grow both intellectually and professionally.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
                 Backend Developer skilled in Java, Spring Boot, and PostgreSQL with a focus on clean architecture,
                 secure REST APIs, and problem-solving through backend systems. Experienced in building full-stack
                 features and passionate about writing maintainable code.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                I believe in creating robust backend systems that power seamless user experiences.
-                My expertise lies in developing scalable APIs, implementing secure authentication systems,
-                and optimizing database performance to deliver reliable and efficient solutions.
               </p>
             </div>
 

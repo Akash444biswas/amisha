@@ -21,7 +21,7 @@ export default function ProjectsSection() {
       ],
       image: "/slotify.jpeg",
       technologies: ["Java", "Spring Boot", "SQL", "HTML", "CSS", "Git", "Postman"],
-      githubUrl: "https://github.com/Mniasha123",
+      githubUrl: "https://github.com/amisha6502",
       liveUrl: "#",
       featured: true
     },
@@ -36,7 +36,7 @@ export default function ProjectsSection() {
       image: "/api/placeholder/600/400",
       animation: "/Animation - 1750576386234.json",
       technologies: ["JavaScript", "HTML", "CSS", "Responsive Design"],
-      githubUrl: "https://github.com/Mniasha123",
+      githubUrl: "https://github.com/amisha6502",
       liveUrl: "#",
       featured: true
     }
@@ -184,7 +184,7 @@ export default function ProjectsSection() {
           className="text-center mt-12"
         >
           <a
-            href="https://github.com/Mniasha123"
+            href="https://github.com/amisha6502"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground px-8 py-3 rounded-md font-medium transition-colors"

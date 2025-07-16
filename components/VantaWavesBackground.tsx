@@ -73,7 +73,7 @@ export function VantaWavesBackground({ className = "" }: VantaWavesBackgroundPro
     const checkInterval = setInterval(() => {
       attempts++;
       console.log(`🔄 Checking scripts... Attempt ${attempts}/${maxAttempts}`);
-      
+
       if (checkScripts()) {
         clearInterval(checkInterval);
       } else if (attempts >= maxAttempts) {
@@ -90,9 +90,15 @@ export function VantaWavesBackground({ className = "" }: VantaWavesBackgroundPro
   useEffect(() => {
     if (!scriptsLoaded || !vantaRef.current || vantaEffect.current) return;
 
+    // Patch: Ensure THREE.DoubleSide is defined
+    if (window.THREE && typeof window.THREE.DoubleSide === 'undefined') {
+      // @ts-ignore
+      window.THREE.DoubleSide = 2;
+    }
+
     try {
       console.log('🌊 Initializing Vanta Waves...');
-      
+
       vantaEffect.current = window.VANTA.WAVES({
         el: vantaRef.current,
         mouseControls: true,
